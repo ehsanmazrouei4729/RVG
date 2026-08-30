@@ -42,7 +42,6 @@ from urllib.parse import quote
 from collections import deque, defaultdict
 from pathlib import Path
 import bottokentcpproxy
-from protocol.mtproto import mtproto_native as mtproto
 from typing import Optional
 import base64
 import botgeneratedomin
