@@ -2863,9 +2863,6 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host="0.0.0.0",
-        port=CONFIG["port"],
-        log_level="info",
+        port=int(os.environ.get("PORT", 8000)),
         workers=1,
-        loop="auto",         # uvloop رو در صورت نصب بودن استفاده می‌کنه، وگرنه بدون کرش fallback می‌کنه
-        http="auto",
     )
