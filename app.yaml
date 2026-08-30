@@ -1,0 +1,11 @@
+app:
+  name: rvg
+
+  build:
+    command: pip install -r requirements.txt
+
+  run:
+    command: python main.py
+
+  env:
+    PORT: "8000"
