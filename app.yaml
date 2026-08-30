@@ -1,11 +1,4 @@
-app:
-  name: rvg
-
-  build:
-    command: pip install -r requirements.txt
-
-  run:
-    command: python main.py
-
-  env:
-    PORT: "8000"
+kind: wasmer.io/App.v0
+name: rvg
+owner: ehsanmazrouei4729
+package: .
